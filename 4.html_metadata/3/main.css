@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+div{
+  background: red;
+  width: 120px;
+  height: 80px;
+  display: inline;
+}
+span {
+  background: red;
+  width: 120px;
+  height: 80px;
+  display: block;
+}
