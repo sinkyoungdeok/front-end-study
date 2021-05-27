@@ -1,0 +1,28 @@
+<!--
+    srcset, sizes
+    - 이것을 통해 쉽게 이미지의 크기를 설정하는것만으로 대부분의 고려사항을 사용자 브라우저에 떠넘길 수 있다.
+
+    srcset 
+    - 출력될 이미지 목록 후보
+    - 브라우저에 제시할(사용할) 이미지들과 그 이미지들의 원본 크기를 지정합니다.
+    - 사용할 이미지를 사이즈별로 2장이상 준비하여 srcset 속성에 작성한다.
+    - px단위가 아닌, w단위 혹은 x단위를 입력해야 하며, 작은 크기 이미지부터 순서대로 입력합니다.
+    sizes 
+    - 최적화된 조건 설정
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img srcset="images/heropy_small.png 400w,
+    images/heropy_medium.png 700w,
+    images/heropy_large.png 1000w"
+    src = "images/heropy.png"
+    alt = "HEROPY" />
+</body>
+</html>
