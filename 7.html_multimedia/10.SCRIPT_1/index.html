@@ -1,0 +1,19 @@
+<!--
+    script
+    - 스크립트 코드를 문서에 포함하거나 참조(외부 스크립트)
+    - defer: 문서 파싱후에 작동
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/main.js" defer></script> <!-- 여기부분이 실행되는 시점에는 my-name이 없기떄문에 defer가 없으면 읽을 수 없다.
+    defer 를 쓰기 싫으면 body맨밑에서 script를써도 된다.-->
+</head>
+<body>
+    <div id="my-name">HEROPY!</div>
+</body>
+</html>
