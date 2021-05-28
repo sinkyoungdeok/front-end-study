@@ -1,0 +1,24 @@
+<!--
+    canvas
+    - canvas API이나 webGL API를 사용하여 그래픽이나 애니메이션을 랜더링(범위)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="200" height="150"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'rgb(200,0,0)';
+        ctx.fillRect(10,10, 50, 50);
+        ctx.fillStyle = 'rgb(0,0,200,0.5)';
+        ctx.fillRect(30,30,50,50);
+    </script>
+</body>
+</html>
