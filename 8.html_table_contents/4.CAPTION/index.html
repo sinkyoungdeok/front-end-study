@@ -1,0 +1,32 @@
+<!--
+    caption
+    - 표의 제목을 설정
+    - 열리는 TABLE 태그 바로 다음에 작성해야 함
+    - table 당 하나의 caption만 사용 가능 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <caption>데이터 타입과 값</caption>
+        <tr>
+            <th rowspan="2" id="th-data">데이터</th>
+            <th headers="th-data" id="th-type">타입</th>
+            <td headers="th-type">알파벳</td>
+            <td headers="th-type">숫자</td>
+        </tr>
+        <tr>
+            <th headers="th-data" id="th-value">값</th>
+            <td headers="th-value">A</td>
+            <td headers="th-value">7</td>
+        </tr>
+    </table>
+</body>
+</html>
