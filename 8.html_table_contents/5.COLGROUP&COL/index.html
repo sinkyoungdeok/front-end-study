@@ -1,0 +1,58 @@
+<!--
+    colgroup, col
+    - 표의 열들을 공통적으로 정의하는 컬럼 = col 과 그의 집합 colgroup 
+    - display값은 inline, block, table 3개정도만 알아두면 된다. 나머지는 굳이 신경쓸 필요 없다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <caption>데이터 타입과 값</caption>
+        <tr> 
+            <th style="background-color: tomato;"></th>
+            <th>타입</th> 
+            <th>값</th>
+        </tr>
+        <tr>
+            <td style="background-color: tomato;">1</td>
+            <td>알파벳</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td style="background-color: tomato;">2</td>
+            <td>숫자</td>
+            <td>7</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>데이터 타입과 값</caption>
+        <colgroup>
+            <col style="background-color: tomato;">
+            <col style="background-color: lightgray;" span="2">
+        </colgroup>
+        <tr> 
+            <th></th>
+            <th>타입</th> 
+            <th>값</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>알파벳</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>숫자</td>
+            <td>7</td>
+        </tr>
+    </table>
+</body>
+</html>
