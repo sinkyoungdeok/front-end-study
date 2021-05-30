@@ -1,0 +1,31 @@
+<!--
+    td
+    - 일반 칸을 지정
+    - headers는 th에 관련된 하나 이상의 다른 머리글 칸 id 속성 값을 지칭
+    - table을 시각적으로 표현하는데만 집중할거면, headers를 굳이 다 넣을 필요는 없다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="2" id="th-data">데이터</th>
+            <th headers="th-data" id="th-type">타입</th>
+            <td headers="th-type">알파벳</td>
+            <td headers="th-type">숫자</td>
+        </tr>
+        <tr>
+            <th headers="th-data" id="th-value">값</th>
+            <td headers="th-value">A</td>
+            <td headers="th-value">7</td>
+        </tr>
+    </table>
+</body>
+</html>
