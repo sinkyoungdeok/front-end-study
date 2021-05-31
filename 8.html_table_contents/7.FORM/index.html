@@ -1,0 +1,27 @@
+<!--
+    form
+    - 웹 서버에 정보를 제출하기 위한 양식 범위를 정의
+    - form이 다른 form을 자식 요소로 포함할 수 없음
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/login" novalidate target="_blank">
+        <input type="email" name="email">
+        <input type="password" name="password">
+        <button type="submit">로그인</button>
+    </form>
+
+    <form action="/login" method="POST" autocomplete="off">
+        <input type="email" name="email">
+        <input type="password" name="password">
+        <button type="submit">로그인</button>
+    </form>
+</body>
+</html>
