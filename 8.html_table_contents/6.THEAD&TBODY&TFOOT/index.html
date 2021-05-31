@@ -1,0 +1,42 @@
+<!--
+    thead, tbody, tfoot
+    - 표의 머리글(thead), 본문(tbody), 바닥글(tfoot)을 지정
+    - 기본적으로 테이블의 레이아웃에 영향을 주지 않음, 즉 의미적인 부분에서만 표현
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <caption>Fruits</caption>
+        <colgroup>
+          <col span="2" style="background-color: yellowgreen;">
+          <col style="background-color: tomato;">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>F123A</td>
+            <td>Apple</td>
+            <td>$22</td>
+          </tr>
+          <tr>
+            <td>F098B</td>
+            <td>Banana</td>
+            <td>$19</td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
