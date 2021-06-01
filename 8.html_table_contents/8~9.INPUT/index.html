@@ -1,0 +1,48 @@
+<!--
+    input
+    - 사용자에게 입력 받을 데이터 양식 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/login" id="login-form">
+    </form>
+    <input type="text" form="login-form">
+
+    <input type="text" maxlength="6">
+
+    <form action="/login" method="GET">
+        <input type="email">
+        <input type="password">
+        <input type="submit" value="로그인">
+    </form>
+
+    <form action="/login" method="GET">
+        <input type="email" name="id">
+        <input type="password" name="pw">
+        <input type="submit" value="로그인">
+        <input type="reset" value="초기화">
+    </form>
+
+    <input type="number" value="1234" readonly>
+    <input type="number" value="1234" disabled>
+
+    <input type="number" placeholder="숫자를 입력하세요!" max="8" min="4" step="4">
+
+    <input type="checkbox" checked>
+    <br/>
+    <input type="file" multiple>
+
+    <input type="image" src="images/heropy.png" alt="HEROPY"> <!-- 이것은 img태그랑 비슷하지만, form태그의 제출버튼으로도 활용할 수 있도록 클릭이 활성화 된다.-->
+    <br/>
+    <input type="radio" name="radio">
+    <input type="radio" name="radio" checked>
+    <input type="radio" name="radio">
+</body>
+</html>
