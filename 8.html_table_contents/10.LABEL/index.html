@@ -1,0 +1,27 @@
+<!--
+    label
+    - 라벨 가능 요소의 제목
+    - for 속성으로 라벨 가능 요소를 참조하거나 콘텐츠로 포함
+    - 라벨 가능 요소: button, input, progress, select, textarea
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="user-agreement" />
+    <label for="user-agreement">동의하십니까?</label>
+
+    <label><input type="checkbox"/>동의하십니까?</label> <!-- 위와 동일한 결과를 얻을 수 있다.-->
+
+
+    <label>
+        검색 <input type="search">
+    </label>
+</body>
+</html>
