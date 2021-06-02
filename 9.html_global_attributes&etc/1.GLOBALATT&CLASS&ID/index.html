@@ -1,0 +1,47 @@
+<!--
+    전역 속성
+    - 모든 HTML 요소에서 공통적으로 사용 가능한 속성 
+
+    class
+    - 공백으로 구분된 요소의 별칭을 지정 (고유 X)
+    - CSS 혹은 js의 요소 선택기를 통해서 요소를 선택하거나 접근
+
+    id
+    - 문서에서 고유한 식별자를 정의 (고유)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section {
+            width: 100px;
+            color: red;
+            background: blue;
+        }
+        #section {
+            height: 200px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">1</div>
+    <div class="section">2</div>
+    <div class="section">3</div>
+    <div class="section">4</div>
+    <div class="section">5</div>
+    <div class="section">6</div> <!--여기는 ㄱㅊ-->
+    <div id="section">7</div>
+    <div id="section">8</div> 
+    <div id="section">9</div> <!-- 이거는 안됨.. id는 문서당 1개-->
+    
+    <script>
+        const section = document.querySelector('.section'); // 클래스 검색
+        const sectionId = document.getElementById('section'); // 아이디 검색
+    </script>
+</body>
+</html>
