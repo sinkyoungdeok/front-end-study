@@ -1,0 +1,31 @@
+<!--
+    tabindex
+    - tab키를 이용해 요소를 순차적으로 포커스 탐색할 순서를 지정
+    - 대화형 콘텐츠는 기본적으로 코드 순서대로 탭 순서가 지정됨
+    - 비대화형 콘텐츠에 tabindex="0"을 지정하여 대화형 콘텐츠와 같이 탭 순서를 사용
+    - tabindex="-1"을 통해 포커스는 가능하지만 탭 순서에서 제외 가능 
+    - tabindex="1" 이상의 양수 값은 논리적 흐름을 방해하기 때문에 사용을 추천하지 않음 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" value="1" tabindex="3">
+    <input type="text" value="2" tabindex="-1">
+    <input type="text" value="3" tabindex="1">
+    <input type="text" value="4" >
+    <input type="text" value="5" tabindex="2">
+
+    <input type="text" value="1">
+    <input type="text" value="2">
+    <div>2.5</div> <!-- 여기는 비 대화형 콘텐츠이므로 기본적으로는 탭으로 못옴-->
+    <input type="text" value="3">
+    <input type="text" value="4" >
+    <input type="text" value="5">
+</body>
+</html>
