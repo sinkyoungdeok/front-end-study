@@ -1,0 +1,25 @@
+<!--
+    progress
+    - 작업의 완료 진행률을 표시
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<progress value="10" max="100">10 %</progress> -->
+
+    <progress value="0.1">10 %</progress>
+    <script>
+        const progress = document.querySelector('progress');
+        const interval = setInterval(function () {
+            progress.value += 0.1;
+            if (progress.value >= 1) clearInterval(interval);
+        }, 1000) // 1000 ==> 1초
+    </script>
+</body>
+</html>
